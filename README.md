@@ -30,6 +30,11 @@ This **Java-based Inventory Management System** is designed to help businesses e
 - Save inventory to a CSV file  
 - Load inventory from a CSV file  
 
+## 📈 Data Analysis
+
+- Analyze inventory trends over time, including stock levels and sales patterns
+- Generate insights to forecast demand and identify high-performing categories
+
 ---
 
 ## Prerequisites  
