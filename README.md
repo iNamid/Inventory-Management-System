@@ -5,7 +5,7 @@
 # Inventory Management System  
 
 This **Java-based Inventory Management System** is designed to help businesses efficiently track and manage their product inventory. It offers a comprehensive set of features for product management, stock tracking, and transaction logging and advanced data analysis capabilities to support smarter decision-making.  
-
+ 
 
 ---
 

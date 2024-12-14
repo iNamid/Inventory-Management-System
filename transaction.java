@@ -7,6 +7,7 @@ public class Transaction {
     private Product product;
     private int quantityChanged;
     private String transactionType; // "STOCK_IN" or "STOCK_OUT"
+    private double transactionValue; // New
     private LocalDateTime timestamp;
 
     public Transaction(String transactionId, Product product, int quantityChanged, String transactionType) {
@@ -14,15 +15,11 @@ public class Transaction {
         this.product = product;
         this.quantityChanged = quantityChanged;
         this.transactionType = transactionType;
+        this.transactionValue = quantityChanged * product.getPrice();
         this.timestamp = LocalDateTime.now();
     }
 
-    // Getters
-    public String getTransactionId() { return transactionId; }
-    public Product getProduct() { return product; }
-    public int getQuantityChanged() { return quantityChanged; }
-    public String getTransactionType() { return transactionType; }
-    public LocalDateTime getTimestamp() { return timestamp; }
+    public double getTransactionValue() { return transactionValue; }
 
     @Override
     public String toString() {
@@ -31,6 +28,7 @@ public class Transaction {
                 ", product=" + product.getName() +
                 ", quantityChanged=" + quantityChanged +
                 ", transactionType='" + transactionType + '\'' +
+                ", transactionValue=" + transactionValue +
                 ", timestamp=" + timestamp +
                 '}';
     }
