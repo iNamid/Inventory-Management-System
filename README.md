@@ -1,6 +1,6 @@
 
 
----
+--- 
 
 # Inventory Management System  
 
